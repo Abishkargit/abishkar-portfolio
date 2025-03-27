@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Abishkar S V - Cybersecurity Enthusiast & Penetration Tester specializing in web and application security">
+    <meta name="description" content="Abishkar S V - Mechanical Engineer turned Cybersecurity Specialist | Penetration Tester">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,41 +11,58 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <title>Abishkar S V | Cybersecurity Specialist</title>
+    <title>Abishkar S V | Mechanical Engineer to Cybersecurity Specialist</title>
     
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
+        .transition-timeline {
+            position: relative;
+            padding-left: 3rem;
         }
-        .skill-badge {
-            margin: 0.2rem;
+        .transition-timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #0dcaf0, #6c757d);
         }
-        .project-card {
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .nav-pills .nav-link.active {
+        .timeline-point {
+            position: absolute;
+            left: 0.85rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
             background-color: #0dcaf0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .mech-icon {
+            color: #6c757d;
+        }
+        .cyber-icon {
+            color: #0dcaf0;
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Abishkar S V</a>
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="mech-icon"><i class="bi bi-gear-wide-connected"></i></span>
+                <span class="cyber-icon"><i class="bi bi-shield-lock"></i></span>
+                Abishkar S V
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about">About</a>
+                        <a class="nav-link active" href="#journey">My Journey</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
@@ -66,64 +83,119 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Cybersecurity & Penetration Tester</h1>
-                    <p class="lead mb-4">Identifying vulnerabilities, securing systems, and automating security testing to build a safer digital world.</p>
-                    <a href="#contact" class="btn btn-info btn-lg me-2">Contact Me</a>
-                    <a href="#" class="btn btn-outline-secondary btn-lg">Download Resume</a>
+                    <h1 class="display-4 fw-bold mb-4">
+                        From Mechanical Engineering<br>
+                        <span class="text-info">To Cybersecurity</span>
+                    </h1>
+                    <p class="lead mb-4">Leveraging my technical problem-solving skills to build secure digital systems and protect against cyber threats.</p>
+                    <div class="d-flex">
+                        <a href="#journey" class="btn btn-dark btn-lg me-3">
+                            <i class="bi bi-arrow-down-circle"></i> My Transition
+                        </a>
+                        <a href="#contact" class="btn btn-outline-dark btn-lg">
+                            <i class="bi bi-chat-dots"></i> Contact Me
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="images/cyber-security.png" alt="Cybersecurity illustration" class="img-fluid d-none d-lg-block">
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://via.placeholder.com/400x300" alt="Mechanical to Cybersecurity transition" class="img-fluid rounded shadow">
+                        <span class="position-absolute top-0 start-100 translate-middle p-3 bg-info border border-light rounded-circle">
+                            <i class="bi bi-arrow-right fs-1"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- My Journey Section -->
+    <section id="journey" class="py-5 bg-white">
         <div class="container">
+            <h2 class="text-center fw-bold mb-5">My Unique Journey</h2>
+            
             <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">About Me</h2>
-                    <p class="lead">I'm Abishkar, a passionate Cybersecurity Enthusiast & Penetration Tester with hands-on experience in identifying vulnerabilities, securing web applications, and testing digital infrastructures.</p>
-                    <p>Currently working as a Penetration Tester Intern, I'm gaining real-world exposure to cybersecurity challenges. My goal is to develop advanced security solutions, automate security testing, and contribute to a safer digital world.</p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-geo-alt-fill text-info me-2"></i> Veeradipatti, Pudukkottai, Tamil Nadu</li>
-                                <li class="mb-2"><i class="bi bi-translate text-info me-2"></i> Tamil (Native), English (Fluent)</li>
-                            </ul>
+                <div class="col-lg-8 mx-auto">
+                    <div class="transition-timeline">
+                        <!-- Mechanical Engineering Phase -->
+                        <div class="position-relative mb-5 pb-3">
+                            <div class="timeline-point">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <div class="ms-4 ps-3">
+                                <h4>Mechanical Engineering Background</h4>
+                                <h6 class="text-muted">2015-2020</h6>
+                                <ul>
+                                    <li>Bachelor's Degree in Mechanical Engineering</li>
+                                    <li>Developed strong analytical and problem-solving skills</li>
+                                    <li>Gained experience with complex systems and processes</li>
+                                    <li>Worked with CAD software and technical documentation</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-mortarboard-fill text-info me-2"></i> BBA (Final Year)</li>
-                                <li class="mb-2"><i class="bi bi-award-fill text-info me-2"></i> Cybersecurity Certified</li>
-                            </ul>
+                        
+                        <!-- Transition Phase -->
+                        <div class="position-relative mb-5 pb-3">
+                            <div class="timeline-point">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            <div class="ms-4 ps-3">
+                                <h4>The Cybersecurity Discovery</h4>
+                                <h6 class="text-muted">2020-2021</h6>
+                                <ul>
+                                    <li>Became fascinated with ethical hacking and cyber defense</li>
+                                    <li>Recognized parallels between mechanical systems and IT infrastructure</li>
+                                    <li>Self-studied networking fundamentals and security concepts</li>
+                                    <li>Completed CompTIA Security+ certification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Cybersecurity Phase -->
+                        <div class="position-relative">
+                            <div class="timeline-point">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <div class="ms-4 ps-3">
+                                <h4>Cybersecurity Specialist</h4>
+                                <h6 class="text-muted">2021-Present</h6>
+                                <ul>
+                                    <li>Penetration Testing Intern at [Company Name]</li>
+                                    <li>Certified Ethical Hacker (CEH) certification</li>
+                                    <li>Specialized in web application and network security</li>
+                                    <li>Developed security automation tools using Python</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge bg-info">Current Focus: </span>
+                                    <span class="badge bg-dark">Web App Security</span>
+                                    <span class="badge bg-dark">Vulnerability Research</span>
+                                    <span class="badge bg-dark">Security Automation</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card shadow-sm">
+                    
+                    <div class="card mt-5 border-info">
                         <div class="card-body">
-                            <h5 class="card-title">My Cybersecurity Approach</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="bi bi-shield-check text-success me-3"></i>
-                                    <span>Proactive threat identification and mitigation</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="bi bi-bug-fill text-danger me-3"></i>
-                                    <span>Comprehensive vulnerability assessment</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="bi bi-robot text-primary me-3"></i>
-                                    <span>Automation of security testing processes</span>
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <i class="bi bi-file-earmark-text-fill text-info me-3"></i>
-                                    <span>Clear and actionable reporting</span>
-                                </li>
-                            </ul>
+                            <h4 class="card-title"><i class="bi bi-lightbulb text-info"></i> Why This Transition Works</h4>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h6><i class="bi bi-check-circle-fill text-success"></i> Transferable Skills:</h6>
+                                    <ul>
+                                        <li>Systematic problem-solving approach</li>
+                                        <li>Understanding of complex systems</li>
+                                        <li>Technical documentation skills</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6><i class="bi bi-star-fill text-warning"></i> Unique Advantages:</h6>
+                                    <ul>
+                                        <li>Cross-disciplinary perspective</li>
+                                        <li>Physical + digital security understanding</li>
+                                        <li>Proven ability to learn complex topics</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,55 +206,105 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Skills & Expertise</h2>
+            <h2 class="text-center fw-bold mb-5">Technical Skills</h2>
             
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-shield-lock display-4 text-info mb-3"></i>
-                            <h4 class="card-title">Penetration Testing</h4>
-                            <ul class="list-unstyled text-start">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Web Application Security</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Network Security Testing</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Android App Security</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> OWASP Top 10 Vulnerabilities</li>
-                            </ul>
+            <div class="row g-4">
+                <!-- Cybersecurity Skills -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-info">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="bi bi-shield-check"></i> Cybersecurity</h4>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-code-slash display-4 text-info mb-3"></i>
-                            <h4 class="card-title">Programming & Tools</h4>
-                            <div class="d-flex flex-wrap justify-content-center">
-                                <span class="badge bg-primary skill-badge">Python</span>
-                                <span class="badge bg-primary skill-badge">Bash</span>
-                                <span class="badge bg-primary skill-badge">Kali Linux</span>
-                                <span class="badge bg-primary skill-badge">Burp Suite</span>
-                                <span class="badge bg-primary skill-badge">Metasploit</span>
-                                <span class="badge bg-primary skill-badge">OWASP ZAP</span>
-                                <span class="badge bg-primary skill-badge">Frida</span>
-                                <span class="badge bg-primary skill-badge">Nmap</span>
+                        <div class="card-body">
+                            <h6 class="text-muted">Penetration Testing:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">OWASP Top 10</span>
+                                <span class="badge bg-dark">Burp Suite</span>
+                                <span class="badge bg-dark">Metasploit</span>
+                                <span class="badge bg-dark">Nmap</span>
+                            </div>
+                            
+                            <h6 class="text-muted">Web Security:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">SQL Injection</span>
+                                <span class="badge bg-dark">XSS</span>
+                                <span class="badge bg-dark">CSRF</span>
+                                <span class="badge bg-dark">JWT Attacks</span>
+                            </div>
+                            
+                            <h6 class="text-muted">Network Security:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Wireshark</span>
+                                <span class="badge bg-dark">Firewall Rules</span>
+                                <span class="badge bg-dark">IDS/IPS</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-clipboard2-check display-4 text-info mb-3"></i>
-                            <h4 class="card-title">Security Techniques</h4>
-                            <ul class="list-unstyled text-start">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Vulnerability Assessment</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Secure Coding Practices</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Red Teaming</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Threat Analysis</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Report Writing</li>
-                            </ul>
+                <!-- Technical Skills -->
+                <div class="col-md-6">
+                    <div class="card h-100 border-secondary">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0"><i class="bi bi-tools"></i> Technical Proficiencies</h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-muted">Programming:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">Bash Scripting</span>
+                                <span class="badge bg-dark">JavaScript</span>
+                            </div>
+                            
+                            <h6 class="text-muted">Tools & Platforms:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Kali Linux</span>
+                                <span class="badge bg-dark">Docker</span>
+                                <span class="badge bg-dark">Git</span>
+                                <span class="badge bg-dark">AWS</span>
+                            </div>
+                            
+                            <h6 class="text-muted">Mechanical Engineering:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">AutoCAD</span>
+                                <span class="badge bg-dark">SolidWorks</span>
+                                <span class="badge bg-dark">FEA</span>
+                                <span class="badge bg-dark">Technical Drawing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <div class="card border-dark">
+                    <div class="card-body">
+                        <h4><i class="bi bi-arrow-left-right"></i> How Mechanical Engineering Helps My Cybersecurity Work</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="card bg-light h-100">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-puzzle"></i> Systems Thinking</h5>
+                                        <p>Understanding how components interact in complex systems</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light h-100">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-clipboard2-check"></i> Process Orientation</h5>
+                                        <p>Methodical approach to testing and validation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-light h-100">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-file-earmark-text"></i> Documentation</h5>
+                                        <p>Precise technical reporting and specifications</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,54 +313,75 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5 bg-white">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Projects & Research</h2>
             
             <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="card project-card h-100 shadow-sm">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-info">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="bg-info bg-opacity-10 p-2 rounded me-3">
-                                    <i class="bi bi-phone text-info fs-3"></i>
+                                    <i class="bi bi-phone text-info fs-4"></i>
                                 </div>
-                                <h4 class="mb-0">Android App Testing Emulator</h4>
+                                <h4 class="mb-0">Android Security Research</h4>
                             </div>
-                            <p class="card-text">Developing a custom Android testing emulator that allows penetration testers to bypass SSL pinning, root detection, and perform in-depth app security tests without needing external tools like Frida.</p>
-                            <h6 class="mt-4">Key Features:</h6>
+                            <p>Developing techniques to bypass security mechanisms in mobile applications, drawing parallels to mechanical failure analysis.</p>
+                            <h6 class="mt-3">Technical Highlights:</h6>
                             <ul>
-                                <li>Built-in SSL Pinning Bypass</li>
-                                <li>Integrated Reverse Engineering Toolkit</li>
-                                <li>Automated Hooking Mechanism</li>
+                                <li>SSL Pinning Bypass</li>
+                                <li>Root Detection Evasion</li>
+                                <li>Frida Toolkit Implementation</li>
                             </ul>
                             <div class="mt-3">
-                                <span class="badge bg-info text-dark">In Development</span>
-                                <span class="badge bg-secondary ms-2">Android Security</span>
+                                <span class="badge bg-info">In Progress</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-6">
-                    <div class="card project-card h-100 shadow-sm">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-success">
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="bg-info bg-opacity-10 p-2 rounded me-3">
-                                    <i class="bi bi-file-earmark-text text-info fs-3"></i>
+                                <div class="bg-success bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-robot text-success fs-4"></i>
                                 </div>
-                                <h4 class="mb-0">Automatic Report Generator</h4>
+                                <h4 class="mb-0">Security Automation</h4>
                             </div>
-                            <p class="card-text">A Python-based tool to automate vulnerability report generation, saving time for penetration testers by collecting and structuring security findings into professional reports.</p>
-                            <h6 class="mt-4">Features:</h6>
+                            <p>Python scripts to automate vulnerability scanning and reporting, applying mechanical engineering efficiency principles to security workflows.</p>
+                            <h6 class="mt-3">Features:</h6>
                             <ul>
-                                <li>Auto-populates test results from security tools</li>
-                                <li>Generates professional PDF reports</li>
-                                <li>Predefined OWASP-based security templates</li>
+                                <li>Automated Report Generation</li>
+                                <li>Tool Integration</li>
+                                <li>Custom Vulnerability Database</li>
                             </ul>
                             <div class="mt-3">
-                                <span class="badge bg-info text-dark">Python</span>
-                                <span class="badge bg-secondary ms-2">Automation</span>
+                                <span class="badge bg-success">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-warning">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning bg-opacity-10 p-2 rounded me-3">
+                                    <i class="bi bi-shield-check text-warning fs-4"></i>
+                                </div>
+                                <h4 class="mb-0">Industrial Control Security</h4>
+                            </div>
+                            <p>Research project bridging my mechanical background with cybersecurity, focusing on ICS/SCADA system vulnerabilities.</p>
+                            <h6 class="mt-3">Focus Areas:</h6>
+                            <ul>
+                                <li>PLC Security</li>
+                                <li>OT Network Protection</li>
+                                <li>Physical-Digital Threat Vectors</li>
+                            </ul>
+                            <div class="mt-3">
+                                <span class="badge bg-warning text-dark">Research</span>
                             </div>
                         </div>
                     </div>
@@ -248,40 +391,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-dark text-white">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Get In Touch</h2>
+            <h2 class="text-center fw-bold mb-5">Contact Me</h2>
             
             <div class="row">
                 <div class="col-lg-6 mb-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="card bg-secondary text-white h-100">
                         <div class="card-body">
-                            <h4 class="card-title">Contact Information</h4>
-                            <ul class="list-unstyled">
-                                <li class="mb-3 d-flex align-items-center">
-                                    <i class="bi bi-envelope-fill text-info me-3 fs-4"></i>
-                                    <span>abishkarisasi@gmail.com</span>
-                                </li>
-                                <li class="mb-3 d-flex align-items-center">
-                                    <i class="bi bi-github text-info me-3 fs-4"></i>
-                                    <span>github.com/yourgithub</span>
-                                </li>
-                                <li class="mb-3 d-flex align-items-center">
-                                    <i class="bi bi-linkedin text-info me-3 fs-4"></i>
-                                    <span>linkedin.com/in/yourlinkedin</span>
-                                </li>
-                                <li class="mb-3 d-flex align-items-center">
-                                    <i class="bi bi-geo-alt-fill text-info me-3 fs-4"></i>
-                                    <span>Veeradipatti, Pudukkottai, Tamil Nadu</span>
-                                </li>
-                            </ul>
+                            <h4 class="card-title">Let's Connect</h4>
+                            <p>I'm particularly interested in opportunities that value diverse technical backgrounds and unique perspectives on security challenges.</p>
                             
                             <div class="mt-4">
-                                <h5>Let's Connect</h5>
-                                <div class="d-flex">
-                                    <a href="#" class="btn btn-outline-dark me-2"><i class="bi bi-github"></i></a>
-                                    <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#" class="btn btn-outline-danger me-2"><i class="bi bi-envelope"></i></a>
+                                <h5><i class="bi bi-envelope"></i> Email</h5>
+                                <p>abishkarisasi@gmail.com</p>
+                                
+                                <h5><i class="bi bi-geo-alt"></i> Location</h5>
+                                <p>Veeradipatti, Pudukkottai, Tamil Nadu</p>
+                                
+                                <div class="mt-4">
+                                    <a href="#" class="btn btn-light me-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                                    <a href="#" class="btn btn-light me-2"><i class="bi bi-github"></i> GitHub</a>
+                                    <a href="#" class="btn btn-info"><i class="bi bi-file-earmark-person"></i> Resume</a>
                                 </div>
                             </div>
                         </div>
@@ -289,9 +420,9 @@
                 </div>
                 
                 <div class="col-lg-6">
-                    <div class="card shadow-sm">
+                    <div class="card bg-light text-dark">
                         <div class="card-body">
-                            <h4 class="card-title mb-4">Send Me a Message</h4>
+                            <h4 class="card-title">Send a Message</h4>
                             <form>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Name</label>
@@ -303,13 +434,18 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required>
+                                    <select class="form-select" id="subject">
+                                        <option>Job Opportunity</option>
+                                        <option>Project Collaboration</option>
+                                        <option>Security Consultation</option>
+                                        <option>Other Inquiry</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Message</label>
                                     <textarea class="form-control" id="message" rows="4" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-info">Send Message</button>
+                                <button type="submit" class="btn btn-dark">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -319,39 +455,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Abishkar S V</h5>
-                    <p>Cybersecurity Enthusiast & Penetration Tester</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">&copy; 2023 All rights reserved</p>
-                </div>
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center mb-3">
+                <span class="me-3"><i class="bi bi-gear me-1"></i> Mechanical Engineer</span>
+                <span><i class="bi bi-shield-lock me-1"></i> Cybersecurity Specialist</span>
             </div>
+            <p>&copy; 2023 Abishkar S V. All rights reserved.</p>
+            <p class="text-muted">Dual-technical perspective for comprehensive security solutions</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        });
-    </script>
 </body>
 </html>
