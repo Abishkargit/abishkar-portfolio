@@ -10,24 +10,50 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: white;
         }
         header {
-            background: #333;
-            color: white;
+            background: #1f1f1f;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
         section {
-            margin: 20px;
+            margin: 20px 0;
             padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         a {
-            color: #007bff;
+            color: #00aaff;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .resume {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00aaff;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #0088cc;
         }
     </style>
 </head>
@@ -35,28 +61,30 @@
     <header>
         Abishkar | Cybersecurity & Penetration Tester
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>I'm Abishkar, a passionate cybersecurity enthusiast and penetration tester intern.</p>
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <p>Cybersecurity | Penetration Testing | Python | Web Security | Vulnerability Assessment | Network Security | SQL Injection | XSS</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <p>- <b>Android App Testing Emulator</b> (Idea Phase) - An emulator to test Android apps, including SSL pinning bypass.</p>
-        <p>- <b>Automatic Report Generator</b> (In Progress) - Software that fills input fields and generates PDF reports.</p>
-    </section>
-    <section>
-        <h2>Resume</h2>
-        <p><a href="CYBER_SECURITY_RESUME_CNS.pdf" download>Download My Resume (PDF)</a></p>
-    </section>
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:abishkarisasi@gmail.com">abishkarisasi@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/abishkargit" target="_blank">github.com/abishkargit</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/abishkar" target="_blank">linkedin.com/in/abishkar</a></p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I'm Abishkar, a cybersecurity professional and penetration tester intern, passionate about ethical hacking and web security.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>Cybersecurity | Penetration Testing | Python | Web Security | Ethical Hacking | Network Security</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <p>- <b>Android App Testing Emulator:</b> Developing a tool for app security testing.</p>
+            <p>- <b>Automatic Report Generator:</b> Software that automates report creation.</p>
+        </section>
+        <section>
+            <h2>Resume</h2>
+            <a href="CYBER_SECURITY_RESUME_CNS.pdf" download class="btn">Download Resume</a>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:abishkarisasi@gmail.com">abishkarisasi@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Abishkargit" target="_blank">github.com/Abishkargit</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+        </section>
+    </div>
 </body>
 </html>
